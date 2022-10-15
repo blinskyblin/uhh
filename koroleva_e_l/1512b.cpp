@@ -9,13 +9,14 @@ int main()
     int k=0;
     
     char x;
-    int x1=-1;    
-    int y1=-1;
-    int y2=-1;
-    int x2=-1;
+
     
     std::cin>>t;
     for (i=0;i<t;i++) {
+        int x1=-1;    
+        int y1=-1;
+        int y2=-1;
+        int x2=-1;
         std::cin>>n;
         for (j=0;j<n;j++) { //строки
             for (k=0;k<n;k++) { //cтолбцы
