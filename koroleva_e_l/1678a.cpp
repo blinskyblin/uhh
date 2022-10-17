@@ -1,1 +1,32 @@
-//я не успев
+#include <iostream> //https://codeforces.com/problemset/problem/1678/A
+#include <vector>
+#include <algorithm>
+
+int main()
+{
+    int t=0;
+    int n=0;
+    int x;
+    std::cin>>t;
+    for (int i=0; i<t; i++) {
+        int y=0; //кол-во нулей в векторе
+        int z=0; //кол-во повторение в векторе
+        std::vector<int>V; 
+        std::cin>>n;
+        for (int j=0; j<n; j++) {
+            std::cin>>x;
+            V.push_back(x);}
+        std::sort (V.begin(), V.end());
+    for (int k=0; k<n; k++) {
+        if (V[k]==0) {
+            y+=1;}
+        if (V[k]==V[k+1]) {
+            z+=1;}} 
+            
+    if (y!=0) {
+        std::cout<<n-y<<std::endl;}
+    if (y==0&&z!=0) { 
+        std::cout<<n<<std::endl;}
+    if (y==0&&z==0){ 
+        std::cout<<n+1<<std::endl;}}
+}
