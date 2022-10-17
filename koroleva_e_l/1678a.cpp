@@ -17,10 +17,12 @@ int main()
             std::cin>>x;
             V.push_back(x);}
         std::sort (V.begin(), V.end());
-    for (int k=0; k<n; k++) {
+    if (V[0]==0) {
+            y+=1;} //отдельно запишем, чтоб потом не выходить за пределы вектора
+    for (int k=1; k<n; k++) {
         if (V[k]==0) {
             y+=1;}
-        if (V[k]==V[k+1]) {
+        if (V[k-1]==V[k]) {
             z+=1;}} 
             
     if (y!=0) {
