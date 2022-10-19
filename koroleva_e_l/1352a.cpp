@@ -10,16 +10,20 @@ int main()
     std::cin>>t;
     for (int i=0; i<t; i++) {
         int size=0;
+        int realsize=0;
         std::vector<int> v;
         std::cin>>k;
         while (k>0) { //сложнее через for
             v.push_back(k % 10);
+            if (k%10) {
+                size+=1;
+            }
             k/=10;
         }
         
-        size=v.size();
+        realsize=v.size();
         std::cout<<size<<"\n";
-        for (int j=0; j<size; j++) {
+        for (int j=0; j<realsize; j++) {
             if (v[j]!=0) {
                 std::cout<<v[j]*pow(10,j)<<" ";
             }
@@ -27,4 +31,3 @@ int main()
     std::cout<<"\n";
     }
 }
-//не работает, скоро разберусь
