@@ -1,5 +1,5 @@
 #include <iostream> //https://codeforces.com/problemset/problem/1690/D
-#include <string>
+#include <string> //если что есть рабочая версия
 int main()
 {
     int t=0;
