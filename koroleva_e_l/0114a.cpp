@@ -1,4 +1,4 @@
-#include <iostream>  //source:  https://codeforces.com/problemset/problem/114/A
+#include <iostream>  // source:  https://codeforces.com/problemset/problem/114/A
 #include <cmath>
 
 int main()
