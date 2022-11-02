@@ -1,4 +1,4 @@
-#include <iostream> //source:  https://codeforces.com/contest/4/problem/A
+#include <iostream> // source:  https://codeforces.com/contest/4/problem/A
 
 int main()
 {
