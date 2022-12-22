@@ -14,34 +14,34 @@ int main()
     
     if ((dlina == 1) || (dlina == 2)) { //два первые скучные нудные случаи чур вручную
         if (dlina == 1) { 
-            result.insert(result.length(), str[0]);
+            result+str[0];
         }
     
         if (dlina == 2) {
-            result.insert(result.length(),str[0]);
-            result.insert(result.length(),str[1]);
+            result+str[0];
+            result+str[1];
         } 
     }
     
     else {
         if (dlina%2==0) { //если длина str чёт
             ser = dlina/2;
-            result.insert(result.length(),str[ser]);
+            result+str[ser];
             for (i=1; i<ser-1; i++) {
-                result.insert(result.length(),str[ser+i]);
-                result.insert(result.length(),str[ser-i]);
+                result+str[ser+i];
+                result+str[ser-i];
             }
-        result.insert(result.length(),str[2*ser]);
+        result+str[2*ser];
         }
     
         if (dlina%2==1) { //если длина str нечёт
             ser=dlina/2+1;
-            result.insert(result.length(),str[ser]);
+            result+str[ser];
             for (i=1; i<ser-1; i++) {
-                result.insert(result.length(),str[ser-i]);
-                result.insert(result.length(),str[ser+i]);
+                result+str[ser-i];
+                result+str[ser+i];
             }
-        result.insert(result.length(),str[2*ser]);
+        result+str[2*ser];
         }
     }
     
